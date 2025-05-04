@@ -1,0 +1,22 @@
+{
+  "name": "menu-mate-backend",
+  "version": "1.0.1",
+  "description": "Hostel menu calculator",
+  "main": "api/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "sritish",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.3.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
