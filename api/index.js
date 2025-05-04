@@ -3,12 +3,13 @@ import cors from "cors";
 import { authRouter } from "../routes/authRoutes.js";
 import { userRouter } from "../routes/users.js";
 import { menuRouter } from "../routes/menu.js";
-
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 app.use(express.json());
 // app.use(cors());
 const allowedOrigins = [
-  "http://localhost:" + process.env.PORT, // For local dev
+  "http://localhost:5173",
   "https://dummyfrontendurl.com",
 ];
 
