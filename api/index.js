@@ -10,7 +10,7 @@ app.use(express.json());
 // app.use(cors());
 const allowedOrigins = [
   // "http://localhost:5173",
-  "menumate-flax.vercel.app",
+  "https://menumate-flax.vercel.app",
 ];
 
 app.use(
