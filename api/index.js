@@ -6,8 +6,18 @@ import { menuRouter } from "../routes/menu.js";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+const allowedOrigins = [
+  "http://localhost:" + process.env.PORT, // For local dev
+  "https://dummyfrontendurl.com",
+];
 
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use("/auth", authRouter);
 app.use("/user", userRouter);
 app.use("/menu", menuRouter);
