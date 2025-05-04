@@ -9,8 +9,8 @@ const app = express();
 app.use(express.json());
 // app.use(cors());
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://dummyfrontendurl.com",
+  // "http://localhost:5173",
+  "menumate-flax.vercel.app",
 ];
 
 app.use(
